@@ -1,0 +1,25 @@
+{
+  "name": "contourlanguage",
+  "displayName": "Contour",
+  "description": "Language support for Contour, a layered functional programming language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "contour",
+      "aliases": ["Contour", "contour"],
+      "extensions": [".ctr"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "contour",
+      "scopeName": "source.contour",
+      "path": "./syntaxes/contour.tmLanguage.json"
+    }]
+  }
+}
